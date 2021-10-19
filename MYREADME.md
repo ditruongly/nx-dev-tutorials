@@ -43,4 +43,15 @@ nx g @nrwl/nest:app api --frontendProject=todos
 ```
 nx serve api
 ```
-
+###### Create a Nx-Lib 'data'
+```
+nx g @nrwl/workspace:lib data
+```
+###### Create a Nx-Lib 'ui'
+```
+nx g @nrwl/angular:lib ui
+```
+###### Create a Component 'todos' in the Project 'ui'
+```
+nx g c todos --project=ui --export
+```

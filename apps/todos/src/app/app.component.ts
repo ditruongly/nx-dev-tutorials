@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-interface Todo {
-  title: string;
-}
+import { Todo } from '@nx-dev-tutorial/data';
 
 @Component({
   selector: 'nx-dev-tutorial-root',
@@ -25,7 +22,7 @@ export class AppComponent {
 
   addTodo() {
     this.http.post('/api/addTodo', {}).subscribe(
-      () => {this.fetch();}
+      () => { this.fetch(); }
     );
   }
 }
