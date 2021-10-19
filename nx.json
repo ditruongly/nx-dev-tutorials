@@ -11,15 +11,11 @@
     ".eslintrc.json": "*"
   },
   "tasksRunnerOptions": {
+    "scan": true,
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "NjY5MzdhZGEtZTI2Mi00NTBkLWI5NWItZjNjZmZmYzIxMjRifHJlYWQtd3JpdGU="
       }
     }
@@ -33,14 +29,15 @@
     ]
   },
   "projects": {
+    "api": {
+      "tags": []
+    },
     "todos": {
       "tags": []
     },
     "todos-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "todos"
-      ]
+      "implicitDependencies": ["todos"]
     }
   }
 }

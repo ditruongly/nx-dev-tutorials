@@ -30,4 +30,17 @@ First stop running the app.
 ```
 $nx-dev-tutorials> nx e2e todos-e2e --watch
 ```
+###### Install Plugin for Nest
+```
+nx list
+npm i --save-dev @nrwl/nest
+```
+###### Create a Nest-App 'api'
+```
+nx g @nrwl/nest:app api --frontendProject=todos
+```
+###### Run the api-App
+```
+nx serve api
+```
 
